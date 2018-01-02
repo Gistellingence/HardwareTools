@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadHddSn", "ReadHddSn\ReadHddSn.csproj", "{774E4470-B52D-4E18-98BA-FC427FE50C9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{774E4470-B52D-4E18-98BA-FC427FE50C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774E4470-B52D-4E18-98BA-FC427FE50C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774E4470-B52D-4E18-98BA-FC427FE50C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774E4470-B52D-4E18-98BA-FC427FE50C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03D675D0-7706-4241-B166-1851630C80B1}
+	EndGlobalSection
+EndGlobal
