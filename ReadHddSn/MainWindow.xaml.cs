@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,31 @@ namespace ReadHddSn
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnGetSerial_Click(object sender, RoutedEventArgs e)
+        {
+            var computerHddSn = GetHddSerial();
+            TxtDisplay.Text = computerHddSn;
+        }
+
+        private static string GetHddSerial()
+        {
+            var hddList = new StringBuilder();
+            var searcher = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
+            
+            foreach (ManagementObject info in searcher.Get())
+            {
+                hddList.Append(info["SerialNumber"]);
+                hddList.Append(" *** ");
+            }
+
+            return hddList.ToString();
+        }
+
+        private void BtnCopyClipboard_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(TxtDisplay.Text);
         }
     }
 }

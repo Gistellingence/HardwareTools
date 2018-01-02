@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReadHddSn"
         mc:Ignorable="d"
-        Title="Read HardDisk Serial Number" Height="243.137" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+        Title="Read HardDisk Serial Number" Height="243.137" Width="564.216" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
     <Grid Background="#ff646464">
         <Label Content="            HDD SERIAL NUMBER READER" HorizontalAlignment="Stretch" Margin="0,17,0,0" VerticalAlignment="Top" Width="519" FontSize="22" FontFamily="Cooper Black" Foreground="#FFECE8C7"/>
-        <TextBox x:Name="TxtDisplay" HorizontalAlignment="Left" Height="30" Margin="45,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" Background="#242627" BorderBrush="#3bae4f" BorderThickness="2" Foreground="#c0c0c0"/>
-        <Button x:Name="BtnGetSerial" Content="Get Hdd Serial No" HorizontalAlignment="Left" Margin="45,130,0,0" VerticalAlignment="Top" Width="430" Height="30" Background="#416742" BorderBrush="#3bae4f" BorderThickness="2" Foreground="#c0c0c0"/>
+        <TextBox x:Name="TxtDisplay" ScrollViewer.HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Left" Height="40" Margin="45,80,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="336" Background="#242627" BorderBrush="#3bae4f" BorderThickness="2" Foreground="#c0c0c0"/>
+        <Button x:Name="BtnGetSerial" Content="Get Hdd Serial No" HorizontalAlignment="Left" Margin="45,152,0,0" VerticalAlignment="Top" Width="479" Height="30" Background="#416742" BorderBrush="#3bae4f" BorderThickness="2" Foreground="#c0c0c0" Click="BtnGetSerial_Click"/>
+        <Button x:Name="BtnCopyClipboard" Content="Copy To Clipboard" HorizontalAlignment="Left" Margin="395,80,0,0" VerticalAlignment="Top" Width="129" Height="40" Background="#416742" BorderBrush="#3bae4f" BorderThickness="2" Foreground="#c0c0c0" Click="BtnCopyClipboard_Click"/>
 
     </Grid>
 </Window>
